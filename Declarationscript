@@ -1,5 +1,6 @@
 pipeline{
          agent any
+           stages{
                    stage('check validation'){
                                              steps{
                                                    echo 'I am validating the code'
@@ -20,5 +21,5 @@ pipeline{
                                        echo 'I am Deploying the code'
                                       }
                                 }
-}
-}
+                 }
+         }
