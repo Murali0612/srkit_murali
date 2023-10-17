@@ -1,21 +1,21 @@
 pipeline{
      agent any{
                  stage('check validation'){
-                     steps{
-                           echo 'I am validating the code'
-                          }
+                                           steps{
+                                                 echo 'I am validating the code'
+                                                }
                  stage('Compilation'){
-                     steps{
-                           echo 'I am compiling the code'
-                          }
+                                      steps{
+                                            echo 'I am compiling the code'
+                                           }
                  stage('Install'){
-                    steps{
-                          echo 'I am Installing the code'
-                         }
+                                  steps{
+                                        echo 'I am Installing the code'
+                                       }
                  stage('Deploy'){
-                     steps{
-                           echo 'I am Deploying the code'
-                          }
+                                 steps{
+                                       echo 'I am Deploying the code'
+                                      }
                                 }
 }
 }
